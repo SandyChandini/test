@@ -1,0 +1,81 @@
+<html>
+<head>
+	<script>
+		/*let x={firstName:"shaik",lastname="dilshad"};*/
+		function returns(y){
+			return y*y;
+		}
+		var linebreak="<br />";
+		document.write("returns function returns:")
+		document.write(returns(10));
+		document.write(linebreak);
+		var arr=["dil","rafi","shafi","thofith"];
+		document.write(arr+linebreak);
+		/*var i;
+		for(i=0;i<arr.length();i++){
+			document.write("arr["+i+"]="+arr[i]);
+		}*/
+		document.write("const array"+linebreak);
+		const arr1=["moni","hari","vaishu","indrani"];
+		document.write(arr1[0]+linebreak);
+		document.write(arr1[1]+linebreak);
+		document.write(arr1[2]+linebreak);
+		document.write(arr1[3]+linebreak);
+		arr1[0]="ram";
+		arr1[3]="seetha";
+		document.write(arr1[0]+linebreak);
+		document.write(arr1[1]+linebreak);
+		document.write(arr1[2]+linebreak);
+		document.write(arr1[3]+linebreak);
+		/*arr1=["ram","seetha"];
+		document.write(arr1[0]);
+		document.write(arr1[1]);*/
+		document.write("push demo"+linebreak);       
+		document.write(arr1.push("dilshad"));
+		document.write(arr1[0]+linebreak);
+		document.write(arr1[1]+linebreak);
+		document.write(arr1[2]+linebreak);
+		document.write(arr1[3]+linebreak);
+		document.write(arr1[4]+linebreak);
+		document.write("pop demo"+linebreak);  
+		arr1.pop();
+		document.write(arr1[0]+linebreak);
+		document.write(arr1[1]+linebreak);
+		document.write(arr1[2]+linebreak);
+		document.write(arr1[3]+linebreak);
+		document.write("sort demo"+linebreak);  
+		arr1.sort();
+		document.write(arr1[0]+linebreak);
+		document.write(arr1[1]+linebreak);
+		document.write(arr1[2]+linebreak);
+		document.write(arr1[3]+linebreak);
+		document.write("shift demo"+linebreak);  
+		arr1.shift();
+		document.write(arr1+linebreak);
+		document.write("initialisng array using new keyword"+linebreak);
+		var arr3=new Array("dil","rafi","shafi");
+		document.write(arr3[0]+linebreak);
+		document.write(arr3[1]+linebreak);
+		document.write(arr3[2]+linebreak);
+		delete(arr3[1]);
+		//after deleting the particular index element
+		document.write(arr3[0]+linebreak);
+		document.write(arr3[1]+linebreak);
+		document.write(arr3[2]+linebreak);
+		var arr4=new Array();
+		document.write(arr4[0]+linebreak);//it will give undefined coz we didnt intialised
+		document.write(arr4[1]+linebreak);
+		document.write(arr4[2]+linebreak);
+		//concatenate two arrays
+		const newarr=arr1.concat(arr3);
+		document.write(newarr+linebreak);
+		var d=function(y){
+			return y+1;
+		}
+		document.write(d(5));
+	</script>
+</head>
+<body>
+</body>
+</html>
+

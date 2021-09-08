@@ -1,0 +1,159 @@
+<html>
+<head>
+	<script>
+		alert("demo on variables");
+		var result;
+		var linebreak="<br />";
+		var a=10;
+		var b=20;
+		function conditional(){
+			document.write("(a > b) ? 20: 10) => ");
+			result=(a>b)?20:10;
+			document.write(result);
+			document.write(linebreak);
+		}
+		function assignment(){
+			a+=b;
+			document.write("after doing a+=b...a=");
+			document.write(a);
+			document.write(linebreak);
+			b+=b;
+			document.write("after doing b+=b...b=");
+			document.write(b);
+			document.write(linebreak);
+			a-=b;
+			document.write("after doing a-=b...a=");
+			document.write(a);
+			document.write(linebreak);
+			b-=a;
+			document.write("after doing b-=a...b=");
+			document.write(b);
+			document.write(linebreak);
+		}
+		function logical(){
+			document.write("a&&b&&null=");
+			document.write(a&&b&&null);
+			document.write(linebreak);
+			document.write("a||b||null=");
+			document.write(a||b||null);
+			document.write(linebreak);
+			document.write("a||b||true=");
+			document.write(a||b||true);
+			document.write(linebreak);
+			document.write("a&&b&&true=");
+			document.write(a&&b&&true);
+			document.write(linebreak);
+		}
+		function Arithmetic(){
+			document.write("a+b=");
+			document.write(a+b);
+			document.write(linebreak);
+			document.write("a/b=");
+			document.write(a/b);
+			document.write(linebreak);
+			document.write("a%b=");
+			document.write(a%b);
+			document.write(linebreak);
+			document.write("a-b=");
+			document.write(a-b);
+			document.write(linebreak);
+			document.write("a*b=");
+			document.write(a*b);
+			document.write(linebreak);
+		}
+		function loops(){
+			document.write("for loop");
+			for(let i=0;i<a;i++){
+				document.write(i);
+				document.write(linebreak);
+			}
+			document.write("whileloop");
+			let j=0;
+			while(j<b){
+				document.write(j);
+				document.write(linebreak);
+			}
+
+		}
+	</script>
+	<style>
+	.wrapper{
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+		grid-column-gap: 1em;
+		grid-row-gap: 10em;
+		font: italic;
+		font-family: sans-serif;
+		font-size: bold;
+		margin: 50px;
+	}
+	.wrapper>div {
+			border: 5px double #00ffff;
+			padding: 1em;
+			width: 180px;
+			height: 100px;
+	}
+	.wrapper >div:nth-child(odd){
+		border: 5px double pink;
+		padding: 1em;
+		width: 180px;
+		height: 100px;
+	}
+	body{
+		background-color: darkkhaki;
+	}
+	.headings>p{
+			border: 3px solid #00ffff;
+			background-color: #00ffff;
+			width: 70px;
+			height: 5px;
+			text-align: center;
+			padding: 1em;
+			color: white;
+			align-items: center;
+	}
+	.headings>p:nth-child(odd) {
+		border: 3px solid pink;
+		background-color: pink;
+		width: 70px;
+		height: 5px;
+		text-align: center;
+		padding: 1em;
+	}
+	</style>
+</head>
+<body>
+	<marquee><p style="color: #ff00ff ;font-size:50px;">Varibles & operators</p></marquee>
+	<div class="headings">
+		<p>1.conditional</p>
+		<p>2.assignment</p>
+		<p>3.logical</p>
+		<p>4.Arithmetic</p>
+		<p>5.loops</p>
+	</div>
+
+	<div class="wrapper">
+		<div class="box1"> 
+			<form>
+    			
+				<input type="button" value="Click_to_see_Condtional_op" onclick="conditional()">
+			</form>
+		</div>
+		<div class="box2">
+			<button onclick="assignment()">Click_to_see_assignment_op</button>
+		</div>
+		<div class="box3">
+			<button onclick="logical()">Click_to_see_logical_op</button>
+		</div>
+		<div class="box4">
+			<button  onclick="Arithmetic()">Click_to_see_arithemtic_op</button>
+		</div>
+		<div class="box5">
+			<button onclick="loops()">Click_to_see_loops</button>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
